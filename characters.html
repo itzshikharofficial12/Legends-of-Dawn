@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters - Legends of Dawn</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .characters-container {
+            padding: 100px 5% 60px;
+            background: #0f0f13;
+            min-height: 100vh;
+        }
+
+        .characters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .character-card {
+            background: #1a1a24;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .character-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .character-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        .character-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .character-name {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .character-title {
+            color: #d4af37;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .character-desc {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .character-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(212, 175, 55, 0.1);
+            color: #d4af37;
+            border: 1px solid #d4af37;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .character-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            background: #d4af37;
+            bottom: -10px;
+            left: 20%;
+        }
+
+        .section-title p {
+            color: #b0b0b0;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .characters-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            .character-image {
+                height: 300px;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="nav">
+        <div class="brand">
+            <img src="/Assests/WhatsApp Image 2025-11-20 at 09.37.14.jpeg" alt="logo">
+            <span>Legends of Dawn</span>
+        </div>
+
+        <div class="menu">
+            <a href="/login.html">Home</a>
+            <a href="/characters.html" class="active">Characters</a>
+            <a href="/worldmap.html">World Map</a>
+            <a href="/modes.html">Modes</a>
+            <a href="/profile.html">Profile</a>
+        </div>
+    </header>
+
+    <div class="characters-container">
+        <div class="section-title">
+            <h2>Meet the Champions</h2>
+            <p>Explore the legendary heroes and villains of Dawn's world. Each character brings unique abilities and stories to your adventure.</p>
+        </div>
+        
+        <div class="characters-grid">
+            <div class="character-card">
+                <img src="/Assests/char1.png" alt="Warrior" class="character-image">
+                <div class="character-info">
+                    <h3 class="character-name">Aric the Unyielding</h3>
+                    <div class="character-title">The Ironclad Warrior</div>
+                    <p class="character-desc">A veteran of countless battles, Aric's strength and resilience are unmatched on the battlefield.</p>
+                    <a href="#" class="character-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="/Assests/char2.jpg" alt="Mage" class="character-image">
+                <div class="character-info">
+                    <h3 class="character-name">Elara the Enlightened</h3>
+                    <div class="character-title">Archmage of the Arcane</div>
+                    <p class="character-desc">Wielder of ancient magic, Elara's knowledge of the arcane is surpassed by none.</p>
+                    <a href="#" class="character-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="/Assests/char3.png" alt="Ranger" class="character-image">
+                <div class="character-info">
+                    <h3 class="character-name">Kaelin Swiftarrow</h3>
+                    <div class="character-title">Master of the Wilds</div>
+                    <p class="character-desc">With bow in hand, Kaelin strikes with precision from the shadows of the ancient forests.</p>
+                    <a href="#" class="character-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="/Assests/char4.png" alt="Rogue" class="character-image">
+                <div class="character-info">
+                    <h3 class="character-name">Vexis the Shadow</h3>
+                    <div class="character-title">The Silent Blade</div>
+                    <p class="character-desc">Moving unseen and striking without warning, Vexis is death in the night.</p>
+                    <a href="#" class="character-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="/Assests/char5.png" alt="Cleric" class="character-image">
+                <div class="character-info">
+                    <h3 class="character-name">Sister Seraphina</h3>
+                    <div class="character-title">Lightbringer</div>
+                    <p class="character-desc">Her faith is her shield, her prayers a beacon of hope in the darkest times.</p>
+                    <a href="#" class="character-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="character-card">
+                <img src="/Assests/char6.png" alt="Berserker" class="character-image">
+                <div class="character-info">
+                    <h3 class="character-name">Gorath the Unchained</h3>
+                    <div class="character-title">The Raging Storm</div>
+                    <p class="character-desc">Once a slave, now a force of nature, Gorath's rage knows no bounds.</p>
+                    <a href="#" class="character-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        © 2025 Legends of Dawn
+    </footer>
+</body>
+</html>
