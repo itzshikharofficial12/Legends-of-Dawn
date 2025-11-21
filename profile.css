@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -50,14 +50,12 @@ body {
     color: #fff;
 }
 
-/* Profile Container */
 .profile-container {
     max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
 }
 
-/* Profile Header */
 .profile-header {
     display: flex;
     align-items: center;
@@ -121,7 +119,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Stats */
 .profile-stats {
     display: flex;
     gap: 20px;
@@ -149,7 +146,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Activity */
 .profile-section {
     margin-top: 40px;
 }
@@ -185,7 +181,6 @@ body {
     margin-right: 20px;
 }
 
-/* Footer */
 .foot {
     background: #0a0a0c;
     padding: 20px 0;
@@ -196,7 +191,6 @@ body {
     border-top: 1px solid #2a2a35;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .profile-header {
         flex-direction: column;

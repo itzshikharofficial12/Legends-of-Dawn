@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +18,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-/* Navigation */
-.nav {
+
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -33,17 +33,17 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
 }
 
-.brand {
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.brand img {
+.logo img {
     height: 42px;
 }
 
-.brand span {
+.logo span {
     font-size: 1.4rem;
     color: #e0e0e0;
     font-weight: 600;
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-/* Banner */
+
 .banner {
     height: 100vh;
     position: relative;

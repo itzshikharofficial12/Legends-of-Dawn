@@ -1,4 +1,4 @@
-/* Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +12,8 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
-.nav {
+
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -56,7 +56,6 @@ body {
     color: #ffffff;
 }
 
-/* Hero Section */
 .hero {
     height: 100vh;
     position: relative;
@@ -115,8 +114,7 @@ body {
     border-color: #fffcf2;
 }
 
-/* Characters Section */
-.chars {
+.characters {
     padding: 80px 40px;
     text-align: center;
 }
@@ -159,7 +157,6 @@ body {
     color: #bdbdbd;
 }
 
-/* Map Section */
 .map {
     padding: 80px 40px;
     text-align: center;
@@ -200,7 +197,6 @@ body {
 .t3 { bottom: 28%; left: 38%; }
 .t4 { bottom: 18%; right: 22%; }
 
-/* Modes Section */
 .modes {
     padding: 80px 40px;
     text-align: center;
@@ -230,7 +226,6 @@ body {
     color: #bdbdbd;
 }
 
-/* Footer */
 .foot {
     padding: 20px 0;
     text-align: center;
@@ -238,7 +233,6 @@ body {
     color: #bdbdbd;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .hero-text h1 {
         font-size: 3rem;
